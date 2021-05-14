@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://feeds.tmsapi.com/social/MV003358300000.xml?api_key=<TMS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/xml; charset=utf-8
+      Date:
+      - Wed, 02 Dec 2020 20:37:05 GMT
+      Etag:
+      - '"ac0079fd0c07bca73a2d3f630f2d7ee6"'
+      Server:
+      - Mashery Proxy
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-15.mashery.com
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - bd8b1acce9d096a390fa770821cc6345
+      X-Runtime:
+      - '0.035000'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '977'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <social version="1.0">
+          <movie>
+            <rootId>8329393</rootId>
+            <title>Big Mommas: Like Father, Like Son</title>
+            <links>
+              <link>
+                <host id="79625">Facebook</host>
+                <url>http://www.facebook.com/121011897967772</url>
+              </link>
+              <link>
+                <host id="79628">Rotten Tomatoes</host>
+                <url>http://rottentomatoes.com/m/771228966</url>
+              </link>
+              <link>
+                <host id="79626">Twitter</host>
+                <url>https://twitter.com/Bigmommasmovie</url>
+              </link>
+              <link>
+                <host id="79629">Wikipedia</host>
+                <url>http://en.wikipedia.org/w/index.php?curid=27451281</url>
+              </link>
+              <link>
+                <host id="79627">IMDB</host>
+                <url>http://www.imdb.com/title/tt1464174/</url>
+              </link>
+              <link>
+                <host id="79628">Rotten Tomatoes_newID</host>
+                <url>http://rottentomatoes.com/m/771228966</url>
+              </link>
+            </links>
+          </movie>
+        </social>
+  recorded_at: Wed, 02 Dec 2020 20:37:05 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1.1/programs/EP015226800052/images?api_key=<TMS_API_KEY>&imageAspectTV=4x3&imageSize=Lg&imageText=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=7200
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Mon, 14 Dec 2020 23:09:40 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding,Origin
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-17.mashery.com
+      Content-Length:
+      - '272'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p9038828_l_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Logo","text":"yes","primary":"true","tier":"Series"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p10740531_b1t_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1T","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p9200101_b1t_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1T","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p9471691_b1t_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1T","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p11996854_b_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p11996854_b1t_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1T","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p14677817_b_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p9038828_b_h6_an.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1","text":"yes","primary":"true","tier":"Series"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p14677817_b1t_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1T","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p10740531_b_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p9200101_b_h6_aa.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1","text":"yes","primary":"true","tier":"Season"},{"width":"720","height":"540","uri":"http://wewe.tmsimg.com/assets/p9471691_b_h6_ab.jpg","size":"Lg","aspect":"4x3","category":"Banner-L1","text":"yes","primary":"true","tier":"Season"}]'
+  recorded_at: Mon, 14 Dec 2020 23:09:40 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://feeds.tmsapi.com/social/SH006883590000.xml?api_key=<TMS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/xml; charset=utf-8
+      Date:
+      - Wed, 02 Dec 2020 21:06:44 GMT
+      Etag:
+      - '"82b0f608c20061a305f2caccd6e7f1ba"'
+      Server:
+      - Mashery Proxy
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-10.mashery.com
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 3a5f267cae7d5fa58b84299fee22eb6b
+      X-Runtime:
+      - '0.909000'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '553'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <social version="1.0">
+          <series>
+            <rootId>185044</rootId>
+            <title>House</title>
+            <links>
+              <link>
+                <host id="79625">Facebook</host>
+                <url>http://www.facebook.com/7608631709</url>
+              </link>
+              <link>
+                <host id="79629">Wikipedia</host>
+                <url>http://en.wikipedia.org/w/index.php?curid=1273596</url>
+              </link>
+              <link>
+                <host id="79627">IMDB</host>
+                <url>http://www.imdb.com/title/tt0412142/</url>
+              </link>
+            </links>
+          </series>
+        </social>
+  recorded_at: Wed, 02 Dec 2020 21:06:44 GMT
+recorded_with: VCR 6.0.0

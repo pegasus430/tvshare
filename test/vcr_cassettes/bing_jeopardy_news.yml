@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://tvchat-news-search.herokuapp.com/show-
+    body:
+      encoding: UTF-8
+      string: '{"query_id":"show-","show_title":"Jeopardy!","expires":300}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - TornadoServer/6.0.4
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 11 Sep 2020 23:08:38 GMT
+      Content-Length:
+      - '2'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: OK
+  recorded_at: Fri, 11 Sep 2020 23:08:39 GMT
+- request:
+    method: get
+    uri: https://tvchat-news-search.herokuapp.com/show-
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - TornadoServer/6.0.4
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 11 Sep 2020 23:08:39 GMT
+      Etag:
+      - '"4a28606cc41bc16c32ba1eb6cb8d4c112d504787"'
+      Content-Length:
+      - '2489'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"episode_titles": {}, "cast": {}, "characters": {}, "Jeopardy!": [{"url":
+        "https://www.pe.com/2020/09/11/riverside-woman-will-appear-on-jeopardy/",
+        "title": "Riverside woman will appear on \u2018Jeopardy!\u2019", "description":
+        "Cory Barger of Riverside will appear as a contestant on \u201cJeopardy!\u201d
+        Monday, Sept. 14, on the first episode of the quiz show\u2019s 37th season.
+        The show is broadcast at 7 p.m. KABC-TV. Barger, who teaches bassoon at UC
+        Riverside,", "image": "https://www.bing.com/th?id=ON.9896E72944F622499DB4A85D72BB0DBC&pid=News",
+        "publish_date": "2020-09-11T22:08:00.0000000Z", "source": "The Press-Enterprise"},
+        {"url": "https://www.ncregister.com/blog/alex-trebek-of-jeopardy-has-questions-about-god-that-need-answers",
+        "title": "Alex Trebek of \u2018Jeopardy!\u2019 Has Questions About God That
+        Need Answers", "description": "When Alex Trebek, the longtime host of \u201cJeopardy!,\u201d
+        was diagnosed with stage four pancreatic cancer more than a year ago, he was
+        forthright in reporting about his illness. He released a short video statement
+        in March 2019,", "image": "https://www.bing.com/th?id=ON.38EA6D212E2D10A7399F39FCA50651BE&pid=News",
+        "publish_date": "2020-09-11T20:05:00.0000000Z", "source": "National Catholic
+        Register"}, {"url": "https://www.westhawaiitoday.com/2020/09/11/entertainment/jeopardy-and-alex-trebek-return-for-new-episodes-sept-14/",
+        "title": "\u2018Jeopardy!\u2019 \u2014 and Alex Trebek \u2014 return for new
+        episodes Sept. 14", "description": "Alex Trebek attends the SNL 40th Anniversary
+        Celebration at Rockefeller Plaza on Feb. 15, 2015. (Dennis Van Tine/Geisler-Fotopres/DPA/Zuma
+        Preses/TNS) What is good news? Alex Trebek will be back behind the \u201cJeopardy!",
+        "image": "https://www.bing.com/th?id=ON.4BC7121A4CA3641B852D572F774F813A&pid=News",
+        "publish_date": "2020-09-11T10:05:00.0000000Z", "source": "West Hawaii Today"}],
+        "seasons": {"unknown": {"premier": [{"url": "https://www.clickondetroit.com/community/2020/09/11/monday-season-premieres-of-wheel-of-fortune-jeopardy-and-inside-edition/",
+        "title": "Monday season premieres of Wheel of Fortune, Jeopardy!, and Inside
+        Edition", "description": "Monday season premieres of , Jeopardy!, and Inside
+        Edition Catch the brand new episodes this Monday. Madeline Allen, Creative
+        Services Associate Producer", "image": "https://www.bing.com/th?id=ON.51C2565C8FD7477E83308B9574E2B20D&pid=News",
+        "publish_date": "2020-09-11T21:57:00.0000000Z", "source": "clickondetroit.com"}]}}}'
+  recorded_at: Fri, 11 Sep 2020 23:08:39 GMT
+recorded_with: VCR 6.0.0

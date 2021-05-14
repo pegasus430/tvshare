@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tvmaze.com/lookup/shows?imdb=tt0412142
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 03 Dec 2020 01:04:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Location:
+      - http://api.tvmaze.com/shows/118
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 03 Dec 2020 01:04:46 GMT
+- request:
+    method: get
+    uri: http://api.tvmaze.com/shows/118
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 03 Dec 2020 01:04:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":118,"url":"http://www.tvmaze.com/shows/118/house","name":"House","type":"Scripted","language":"English","genres":["Drama","Mystery","Medical"],"status":"Ended","runtime":60,"premiered":"2004-11-16","officialSite":null,"schedule":{"time":"21:00","days":["Monday"]},"rating":{"average":9},"weight":92,"network":{"id":4,"name":"FOX","country":{"name":"United
+        States","code":"US","timezone":"America/New_York"}},"webChannel":null,"externals":{"tvrage":3908,"thetvdb":73255,"imdb":"tt0412142"},"image":{"medium":"http://static.tvmaze.com/uploads/images/medium_portrait/43/109527.jpg","original":"http://static.tvmaze.com/uploads/images/original_untouched/43/109527.jpg"},"summary":"<p>Sink
+        your teeth into meaty drama and intrigue with <b>House</b>, FOX''s take on
+        mystery, where the villain is a medical malady and the hero is an irreverent,
+        controversial doctor who trusts no one, least of all his patients.</p>","updated":1591581095,"_links":{"self":{"href":"http://api.tvmaze.com/shows/118"},"previousepisode":{"href":"http://api.tvmaze.com/episodes/9206"}}}'
+  recorded_at: Thu, 03 Dec 2020 01:04:46 GMT
+recorded_with: VCR 6.0.0

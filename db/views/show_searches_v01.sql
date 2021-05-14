@@ -1,0 +1,1 @@
+SELECT "title", "id", "tmsId", "preferred_image_uri", "releaseYear", "genres", "subType", "cast", LOWER(title) as "lower_title" FROM "shows" WHERE "shows"."tmsId" IS NOT NULL AND NOT ("tmsId" like 'EP%')

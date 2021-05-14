@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  height: MyString
+  primary: MyString
+  uri: MyText
+  width: MyString
+  show: one
+
+two:
+  category: MyString
+  height: MyString
+  primary: MyString
+  uri: MyText
+  width: MyString
+  show: two

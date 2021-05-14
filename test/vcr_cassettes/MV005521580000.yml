@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1.1/programs/MV005521580000/images?api_key=<TMS_API_KEY>&imageAspectTV=4x3&imageSize=Ms&imageText=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=7200
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Mon, 14 Dec 2020 23:09:40 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding,Origin
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-08.mashery.com
+      Content-Length:
+      - '159'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"width":"1440","height":"1080","uri":"http://wewe.tmsimg.com/assets/p10569481_v_h9_ab.jpg","size":"Ms","aspect":"4x3","category":"VOD
+        Art","text":"yes","primary":"true"}]'
+  recorded_at: Mon, 14 Dec 2020 23:09:40 GMT
+recorded_with: VCR 6.0.0

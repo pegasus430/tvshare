@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tvmaze.com/lookup/shows?imdb=tt5834204
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 03 Dec 2020 01:04:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Location:
+      - http://api.tvmaze.com/shows/16579
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 03 Dec 2020 01:04:46 GMT
+- request:
+    method: get
+    uri: http://api.tvmaze.com/shows/16579
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 03 Dec 2020 01:04:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6MTY1NzksInVybCI6Imh0dHA6Ly93d3cudHZtYXplLmNvbS9zaG93cy8xNjU3OS90aGUtaGFuZG1haWRzLXRhbGUiLCJuYW1lIjoiVGhlIEhhbmRtYWlkJ3MgVGFsZSIsInR5cGUiOiJTY3JpcHRlZCIsImxhbmd1YWdlIjoiRW5nbGlzaCIsImdlbnJlcyI6WyJEcmFtYSIsIlNjaWVuY2UtRmljdGlvbiJdLCJzdGF0dXMiOiJSdW5uaW5nIiwicnVudGltZSI6NjAsInByZW1pZXJlZCI6IjIwMTctMDQtMjYiLCJvZmZpY2lhbFNpdGUiOiJodHRwOi8vd3d3Lmh1bHUuY29tL3RoZS1oYW5kbWFpZHMtdGFsZSIsInNjaGVkdWxlIjp7InRpbWUiOiIiLCJkYXlzIjpbIldlZG5lc2RheSJdfSwicmF0aW5nIjp7ImF2ZXJhZ2UiOjcuNn0sIndlaWdodCI6OTgsIm5ldHdvcmsiOm51bGwsIndlYkNoYW5uZWwiOnsiaWQiOjIsIm5hbWUiOiJIdWx1IiwiY291bnRyeSI6eyJuYW1lIjoiVW5pdGVkIFN0YXRlcyIsImNvZGUiOiJVUyIsInRpbWV6b25lIjoiQW1lcmljYS9OZXdfWW9yayJ9fSwiZXh0ZXJuYWxzIjp7InR2cmFnZSI6bnVsbCwidGhldHZkYiI6MzIxMjM5LCJpbWRiIjoidHQ1ODM0MjA0In0sImltYWdlIjp7Im1lZGl1bSI6Imh0dHA6Ly9zdGF0aWMudHZtYXplLmNvbS91cGxvYWRzL2ltYWdlcy9tZWRpdW1fcG9ydHJhaXQvMjAwLzUwMjAyMi5qcGciLCJvcmlnaW5hbCI6Imh0dHA6Ly9zdGF0aWMudHZtYXplLmNvbS91cGxvYWRzL2ltYWdlcy9vcmlnaW5hbF91bnRvdWNoZWQvMjAwLzUwMjAyMi5qcGcifSwic3VtbWFyeSI6IjxwPjxiPlRoZSBIYW5kbWFpZCdzIFRhbGU8L2I+IGlzIHRoZSBzdG9yeSBvZiBsaWZlIGluIHRoZSBkeXN0b3BpYSBvZiBHaWxlYWQsIGEgdG90YWxpdGFyaWFuIHNvY2lldHkgaW4gd2hhdCB3YXMgZm9ybWVybHkgdGhlIFVuaXRlZCBTdGF0ZXMuIEZhY2luZyBlbnZpcm9ubWVudGFsIGRpc2FzdGVycyBhbmQgYSBwbHVuZ2luZyBiaXJ0aHJhdGUsIEdpbGVhZCBpcyBydWxlZCBieSBhIHR3aXN0ZWQgZnVuZGFtZW50YWxpc20gaW4gaXRzIG1pbGl0YXJpemVkIOKAmHJldHVybiB0byB0cmFkaXRpb25hbCB2YWx1ZXMnLiBBcyBvbmUgb2YgdGhlIGZldyByZW1haW5pbmcgZmVydGlsZSB3b21lbiwgT2ZmcmVkIGlzIGEgSGFuZG1haWQgaW4gdGhlIENvbW1hbmRlcidzIGhvdXNlaG9sZCwgb25lIG9mIHRoZSBjYXN0ZSBvZiB3b21lbiBmb3JjZWQgaW50byBzZXh1YWwgc2Vydml0dWRlIGFzIGEgbGFzdCBkZXNwZXJhdGUgYXR0ZW1wdCB0byByZXBvcHVsYXRlIHRoZSB3b3JsZC4gSW4gdGhpcyB0ZXJyaWZ5aW5nIHNvY2lldHksIE9mZnJlZCBtdXN0IG5hdmlnYXRlIGJldHdlZW4gQ29tbWFuZGVycywgdGhlaXIgY3J1ZWwgV2l2ZXMsIGRvbWVzdGljIE1hcnRoYXMsIGFuZCBoZXIgZmVsbG93IEhhbmRtYWlkcyDigJMgd2hlcmUgYW55b25lIGNvdWxkIGJlIGEgc3B5IGZvciBHaWxlYWQg4oCTIGFsbCB3aXRoIG9uZSBnb2FsOiB0byBzdXJ2aXZlIGFuZCBmaW5kIHRoZSBkYXVnaHRlciB0aGF0IHdhcyB0YWtlbiBmcm9tIGhlci48L3A+IiwidXBkYXRlZCI6MTYwNjc2MjA5OSwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHA6Ly9hcGkudHZtYXplLmNvbS9zaG93cy8xNjU3OSJ9LCJwcmV2aW91c2VwaXNvZGUiOnsiaHJlZiI6Imh0dHA6Ly9hcGkudHZtYXplLmNvbS9lcGlzb2Rlcy8xNjA4NjgzIn19fQ==
+  recorded_at: Thu, 03 Dec 2020 01:04:46 GMT
+recorded_with: VCR 6.0.0

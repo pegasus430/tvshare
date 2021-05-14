@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tvmaze.com/lookup/shows?imdb=tt1190634
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 03 Dec 2020 01:20:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Location:
+      - http://api.tvmaze.com/shows/15299
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 03 Dec 2020 01:20:56 GMT
+- request:
+    method: get
+    uri: http://api.tvmaze.com/shows/15299
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 03 Dec 2020 01:20:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":15299,"url":"http://www.tvmaze.com/shows/15299/the-boys","name":"The
+        Boys","type":"Scripted","language":"English","genres":["Drama","Action","Science-Fiction"],"status":"Running","runtime":60,"premiered":"2019-07-26","officialSite":"https://www.amazon.com/dp/B07QQQ52B3","schedule":{"time":"","days":["Friday"]},"rating":{"average":8.6},"weight":100,"network":null,"webChannel":{"id":3,"name":"Amazon
+        Prime","country":null},"externals":{"tvrage":null,"thetvdb":355567,"imdb":"tt1190634"},"image":{"medium":"http://static.tvmaze.com/uploads/images/medium_portrait/267/668204.jpg","original":"http://static.tvmaze.com/uploads/images/original_untouched/267/668204.jpg"},"summary":"<p>In
+        a world where superheroes embrace the darker side of their massive celebrity
+        and fame, <b>The Boys</b> centres on a group of vigilantes known informally
+        as \"The Boys,\" who set out to take down corrupt superheroes with no more
+        than blue collar grit and a willingness to fight dirty.</p>","updated":1603098980,"_links":{"self":{"href":"http://api.tvmaze.com/shows/15299"},"previousepisode":{"href":"http://api.tvmaze.com/episodes/1855144"}}}'
+  recorded_at: Thu, 03 Dec 2020 01:20:56 GMT
+recorded_with: VCR 6.0.0

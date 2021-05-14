@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  awardCatId: MyString
+  awardId: MyString
+  awardName: MyString
+  category: MyString
+  name: MyString
+  year: MyString
+  show: one
+
+two:
+  awardCatId: MyString
+  awardId: MyString
+  awardName: MyString
+  category: MyString
+  name: MyString
+  year: MyString
+  show: two

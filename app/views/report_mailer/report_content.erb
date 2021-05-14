@@ -1,0 +1,5 @@
+User <%= "#{@user.username} (##{@user.id})" %> has reported some content.
+
+Content: <%= @report.reportable_type %> #<%= @report.reportable_id %>.
+Message: <%= @report.message %>
+URL: <%= @report.url || "No URL reported" %>

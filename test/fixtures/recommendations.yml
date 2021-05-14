@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rootId: MyString
+  title: MyString
+  tmsId: MyString
+  show: one
+
+two:
+  rootId: MyString
+  title: MyString
+  tmsId: MyString
+  show: two

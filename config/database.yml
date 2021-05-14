@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: tvsharedb_development
+  username: postgres
+  password: postgres
+
+test:
+  <<: *default
+  database: tvsharedb_test
+  username: postgres
+  password: postgres
+
+production:
+  <<: *default
+  database: tvsharedb_production
+  username: tvsharedb
+  password: <%= ENV['TVSHAREDB_DATABASE_PASSWORD'] %>

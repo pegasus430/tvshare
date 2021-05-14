@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.css" integrity="sha512-sW2OY/VffZ3OJ9Gbps+88dLVF1w4FvxGkT4jJXqks04ERQj6FhQTc9DuD6n6UdeJp5zPRCGSFT7dhJHXSso63A==" crossorigin="anonymous" />
+    <style>
+      body {
+        background-color: #f0f2f5!important;
+      }
+    </style>
+  </head>
+  <body>
+    <%= yield %>
+
+    <%#= javascript_include_tag "admin.js" %>
+    <%= javascript_pack_tag 'application' %>
+
+  </body>
+</html>

@@ -1,0 +1,142 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1.1/programs/MV003358300000?api_key=<TMS_API_KEY>&descriptionLang=en&imageAspect=4x3&imageSize=Ms&imageText=true&titleLang=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=7200
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 15 Dec 2020 00:00:53 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding,Origin
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1b-06.mashery.com
+      Content-Length:
+      - '2430'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"tmsId":"MV003358300000","rootId":"8329393","subType":"Feature Film","title":"Big
+        Mommas: Like Father, Like Son","releaseYear":2011,"releaseDate":"2011-02-18","titleLang":"en","descriptionLang":"en","entityType":"Movie","genres":["Comedy"],"longDescription":"After
+        stepson Trent (Brandon T. Jackson) witnesses a murder, FBI agent Malcolm Turner
+        (Martin Lawrence) brings back Big Momma, his plus-size alter ego, to help
+        solve the crime. Big Momma goes deep under cover at a girls school of the
+        performing arts, but this time he has Trent and Trent''s female alter ego
+        Charmaine as backup. The duo must try to find the killer before the killer
+        finds them, but complicating matters is Trent''s crush on a student (Jessica
+        Lucas).","shortDescription":"Malcolm Turner and his stepson go under cover
+        at a girls school to find a killer.","cast":[{"billingOrder":"01","role":"Actor","nameId":"990","personId":"990","name":"Martin
+        Lawrence","characterName":"Malcolm Turner/Big Momma"},{"billingOrder":"02","role":"Actor","nameId":"341377","personId":"332503","name":"Brandon
+        T. Jackson","characterName":"Trent/Charmaine"},{"billingOrder":"03","role":"Actor","nameId":"301598","personId":"297676","name":"Jessica
+        Lucas","characterName":"Haley"},{"billingOrder":"04","role":"Actor","nameId":"542007","personId":"522410","name":"Portia
+        Doubleday","characterName":"Jasmine"},{"billingOrder":"05","role":"Actor","nameId":"157886","personId":"157656","name":"Tony
+        Curran","characterName":"Chirkoff"},{"billingOrder":"06","role":"Actor","nameId":"226004","personId":"223403","name":"Ana
+        Ortiz","characterName":"Gail"},{"billingOrder":"07","role":"Actor","nameId":"225461","personId":"222893","name":"Sherri
+        Shepherd","characterName":"Beverly Townsend"},{"billingOrder":"08","role":"Actor","nameId":"344565","personId":"335691","name":"Michelle
+        Ang","characterName":"Mia"},{"billingOrder":"09","role":"Actor","nameId":"504786","personId":"491171","name":"Emily
+        Rios","characterName":"Isabelle"},{"billingOrder":"10","role":"Actor","nameId":"212947","personId":"210745","name":"Henri
+        Lubatti","characterName":"Vlad"},{"billingOrder":"11","role":"Actor","nameId":"596742","personId":"572330","name":"Lorenzo
+        Pisoni","characterName":"Dmitri"},{"billingOrder":"12","role":"Actor","nameId":"291","personId":"291","name":"Max
+        Casella","characterName":"Canetti"},{"billingOrder":"13","role":"Actor","nameId":"95294","personId":"95294","name":"Marc
+        John Jefferies","characterName":"Rembrandt"},{"billingOrder":"14","role":"Actor","nameId":"621422","personId":"597189","name":"Brandon
+        Gill","characterName":"Scratch"},{"billingOrder":"15","role":"Actor","nameId":"633449","personId":"611884","name":"Zack
+        Mines","characterName":"Delant\u00e9"},{"billingOrder":"16","role":"Actor","nameId":"633450","personId":"611885","name":"Trey
+        Lindsey","characterName":"TJ"},{"billingOrder":"17","role":"Actor","nameId":"320070","personId":"313030","name":"Ken
+        Jeong","characterName":"Mailman"}],"crew":[{"billingOrder":"01","role":"Director","nameId":"236145","personId":"232720","name":"John
+        Whitesell"},{"billingOrder":"02","role":"Screenwriter","nameId":"633451","personId":"611886","name":"Matthew
+        Fogel"},{"billingOrder":"03","role":"Producer","nameId":"375714","personId":"366839","name":"David
+        T. Friendly"},{"billingOrder":"04","role":"Producer","nameId":"534228","personId":"517374","name":"Michael
+        Green"},{"billingOrder":"05","role":"Executive Producer","nameId":"303903","personId":"299949","name":"Arnon
+        Milchan"},{"billingOrder":"06","role":"Executive Producer","nameId":"990","personId":"990","name":"Martin
+        Lawrence"},{"billingOrder":"07","role":"Executive Producer","nameId":"754073","personId":"459022","name":"Jeffrey
+        Kwatinetz"},{"billingOrder":"08","role":"Executive Producer","nameId":"428938","personId":"420063","name":"Jeremiah
+        Samuels"},{"billingOrder":"09","role":"Cinematographer","nameId":"468959","personId":"460084","name":"Anthony
+        B. Richmond"},{"billingOrder":"10","role":"Production Design","nameId":"633970","personId":"612444","name":"Meghan
+        C. Rogers"},{"billingOrder":"11","role":"Film Editor","nameId":"472770","personId":"463895","name":"Priscilla
+        Nedd-Friendly"},{"billingOrder":"12","role":"Original Music","nameId":"414221","personId":"405346","name":"David
+        Newman"},{"billingOrder":"13","role":"Costume Designer","nameId":"633971","personId":"612445","name":"Leah
+        Katznelson"},{"billingOrder":"14","role":"Casting","nameId":"528357","personId":"512881","name":"Kim
+        Taylor-Coleman"},{"billingOrder":"15","role":"Casting","nameId":"374327","personId":"365452","name":"Alexa
+        L. Fogel"},{"billingOrder":"16","role":"Art Director","nameId":"917179","personId":"508791","name":"Mark
+        E. Garner"},{"billingOrder":"17","role":"Set Decoration","nameId":"475301","personId":"466426","name":"Frank
+        Galline"}],"directors":["John Whitesell"],"keywords":{"Mood":["Hilarious","Offbeat"],"Time
+        Period":["2010s"],"Theme":["Pursuit","Growing up","Mystery"],"Character":["FBI
+        agent","Grandmother","Stepson","Criminal","Student"],"Setting":["School","United
+        States"],"Subject":["Cross-dressing","Murder case","Father/son relationship","Investigation","Police
+        work","Disguise"]},"officialUrl":"http://www.bigmommashousemovie.com/","qualityRating":{"ratingsBody":"TMS","value":"1.5"},"ratings":[{"body":"Motion
+        Picture Association of America","code":"PG-13"},{"body":"B.C. Film Classification
+        Office","code":"PG"},{"body":"Saskatchewan Film and Video Classification Board","code":"PG"},{"body":"Manitoba
+        Film Classification Board","code":"PG"},{"body":"Alberta''s Film Classification
+        Board","code":"PG"},{"body":"R\u00e9gie du cin\u00e9ma","code":"G"},{"body":"British
+        Board of Film Classification","code":"PG"},{"body":"Maritime Film Classification
+        Board","code":"PG"},{"body":"UK Content Provider","code":"PG"},{"body":"Departamento
+        de Justi\u00e7a, Classifica\u00e7\u00e3o, T\u00edtulos e Qualifica\u00e7\u00e3o","code":"12"},{"body":"Film
+        & Publication Board","code":"13"},{"body":"Mediakasvatus- ja kuvaohjelmayksikk\u00f6","code":"K12"},{"body":"Freiwillige
+        Selbstkontrolle der Filmwirtschaft","code":"6"},{"body":"Direcci\u00f3n General
+        de Radio, Televisi\u00f3n y Cinematograf\u00eda","code":"B"}],"advisories":["Adult
+        Situations","Violence"],"recommendations":[{"tmsId":"MV000379260000","rootId":"15209","title":"Mrs.
+        Doubtfire"},{"tmsId":"MV001719410000","rootId":"160651","title":"Madea''s
+        Family Reunion"},{"tmsId":"MV000468410000","rootId":"18173","title":"The Nutty
+        Professor"}],"runTime":"PT01H48M","preferredImage":{"width":"1440","height":"1080","uri":"http://wewe.tmsimg.com/assets/p8329393_v_h9_aa.jpg","category":"VOD
+        Art","text":"yes","primary":"true"}}'
+  recorded_at: Tue, 15 Dec 2020 00:00:53 GMT
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1.1/programs/MV003358300000/images?api_key=<TMS_API_KEY>&imageAspectTV=4x3&imageSize=Ms&imageText=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=7200
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 15 Dec 2020 00:00:54 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding,Origin
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-19.mashery.com
+      Content-Length:
+      - '158'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"width":"1440","height":"1080","uri":"http://wewe.tmsimg.com/assets/p8329393_v_h9_aa.jpg","size":"Ms","aspect":"4x3","category":"VOD
+        Art","text":"yes","primary":"true"}]'
+  recorded_at: Tue, 15 Dec 2020 00:00:54 GMT
+recorded_with: VCR 6.0.0

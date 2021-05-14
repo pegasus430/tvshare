@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tvmaze.com/lookup/shows?imdb=tt0367279
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 03 Dec 2020 01:04:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Location:
+      - http://api.tvmaze.com/shows/321
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 03 Dec 2020 01:04:46 GMT
+- request:
+    method: get
+    uri: http://api.tvmaze.com/shows/321
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 03 Dec 2020 01:04:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":321,"url":"http://www.tvmaze.com/shows/321/arrested-development","name":"Arrested
+        Development","type":"Scripted","language":"English","genres":["Comedy","Family"],"status":"Ended","runtime":null,"premiered":"2003-11-02","officialSite":"https://www.netflix.com/title/70140358","schedule":{"time":"","days":[]},"rating":{"average":8.5},"weight":95,"network":null,"webChannel":{"id":1,"name":"Netflix","country":null},"externals":{"tvrage":2649,"thetvdb":72173,"imdb":"tt0367279"},"image":{"medium":"http://static.tvmaze.com/uploads/images/medium_portrait/184/461652.jpg","original":"http://static.tvmaze.com/uploads/images/original_untouched/184/461652.jpg"},"summary":"<p>After
+        being passed over as partner at The Bluth Co., widower Michael resolves to
+        quit the family business and move away to spend more quality time with his
+        13-year-old son, George Michael. But when his father George Bluth Sr. is arrested
+        for shifty accounting practices and the family assets are frozen, Michael
+        is forced to stay in Orange County to help his wildly eccentric family pick
+        up the pieces.</p>","updated":1606683722,"_links":{"self":{"href":"http://api.tvmaze.com/shows/321"},"previousepisode":{"href":"http://api.tvmaze.com/episodes/1612265"}}}'
+  recorded_at: Thu, 03 Dec 2020 01:04:46 GMT
+recorded_with: VCR 6.0.0
